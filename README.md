@@ -1,1 +1,1 @@
-# FieldOps-Plataforma-de-Inspe-o-em-Campo
+# FieldOps-Plataforma-de-Inspeção-em-Campo
