@@ -1,6 +1,6 @@
 # FieldOps
 
-### Plataforma de Inspeção em Campo
+### Plataforma de Inspeção em Campo by Kelvim Lucas, Ryan Augusto, Gustavo Senna, Carlos Eduardo, Gustavo Souza, Gustavo Silveira
 
 <p align="center">
   <strong>Planeje. Execute. Registre. Revise.</strong><br>
