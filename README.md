@@ -271,7 +271,7 @@ Documentações específicas sobre arquitetura, API, banco de dados, sincroniza�
 <p align="right" style="color: #17D1A6">Gustavo<span style="color: #000000b2"> Silveira</span></p>
 
 
-<footer align="center">
+<p align="center">
   <strong style="color: #17D1A6">Field<span style="color: #000000b2">Ops</span></strong><br>
   <sub>Inspeções em campo. Dados que geram confiança.</sub>
-</footer>
+</p>
