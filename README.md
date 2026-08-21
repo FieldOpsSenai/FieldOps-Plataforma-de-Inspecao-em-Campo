@@ -1,19 +1,19 @@
 <h1 align="center" style="color: #17D1A6">Field<span style="color: #000000b2">Ops</span></h1>
 <h2 align="center" style="color: #000000b2">Plataforma de Inspeção em Campo</h2>
-<p align="center">´
+<p align="center">
   <strong><span style="color: #000000b2">Planeje.</span> <span style="color: #17D1A6">Execute.</span> <span style="color: #000000b2">Registre.</span> <span style="color: #17D1A6">Revise<span>.</strong><br>
 </p>
 
-<hr style="background-color: #17d1a646">
+
 
 ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Expo](https://img.shields.io/badge/expo-1C1E24?style=for-the-badge&logo=expo&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) 
 
-<h2 align="center" style="color: #17D1A6">Visão <span style="color: #000000b2">Geral</span></h2>
+<h2 style="color: #17D1A6">Visão <span style="color: #000000b2">Geral</span></h2>
 
 O **FieldOps** é uma plataforma digital desenvolvida para organizações que realizam **inspeções técnicas em campo**, conectando a operação realizada pelos técnicos à gestão administrativa em um único fluxo.
 A plataforma substitui processos fragmentados — como **formulários impressos, planilhas, mensagens e registros informais** — por uma solução digital integrada, padronizada e rastreável.
 
-<h3  align="center" style="color: #17D1A6"><span style="color: #000000b2">Do</span> Campo <span style="color: #000000b2"> à <span style="color: #17D1A6">Gestão</span></h2>
+<h3 style="color: #17D1A6"><span style="color: #000000b2">Do</span> Campo <span style="color: #000000b2"> à <span style="color: #17D1A6">Gestão</span></h2>
 
 |  Operação em campo 📱        |  Gestão administrativa 🖥️     |
 | :--------------------------- | :----------------------------- |
@@ -25,7 +25,7 @@ A plataforma substitui processos fragmentados — como **formulários impressos,
 | Trabalhar offline            | Revisar e aprovar inspeções    |
 
 
-<h3  align="center" style="color: #17D1A6"><span style="color: #000000b2">Um</span> único fluxo</h2>
+<h3 style="color: #17D1A6"><span style="color: #000000b2">Um</span> único fluxo</h2>
 
 O FieldOps permite que o técnico execute suas atividades mesmo em locais **sem conexão com a internet**, registrando checklists, evidências e informações da inspeção para posterior sincronização.
 Ao mesmo tempo, administradores e supervisores acompanham o processo, desde a configuração e planejamento até a revisão dos resultados.
@@ -36,9 +36,9 @@ Ao mesmo tempo, administradores e supervisores acompanham o processo, desde a co
 
 **Uma operação de inspeção mais padronizada, rastreável e conectada**.
 
-<hr style="background-color: #17d1a646">
+
  
-<h2  align="center" style="color: #17D1A6">Principais <span style="color: #000000b2">recursos</span></h2>
+<h2 style="color: #17D1A6">Principais <span style="color: #000000b2">recursos</span></h2>
 
 - [ ] Segurança
 - [ ] Mobile
@@ -47,7 +47,7 @@ Ao mesmo tempo, administradores e supervisores acompanham o processo, desde a co
 - [ ] Offline
 - [ ] Sincronização 
 
-<hr style="background-color: #17d1a646">
+
 
 
 <h2  style="color: #17D1A6">Arquitetura</h2>
@@ -79,7 +79,7 @@ flowchart LR
     API --> DB
     API --> STORAGE
 ```
-<hr style="background-color: #17d1a646">
+
 
 <h2 style="color: #17D1A6">Fluxo <span style="color: #000000b2">principal</span></h2>
 
@@ -115,7 +115,7 @@ flowchart TD
     K -->|Correção| M[Retorno ao Técnico]
 ```
 
-<hr style="background-color: #17d1a646">
+
 
 
 <h2  align="center" style="color: #17D1A6">Offline-first <span style="color: #000000b2">architecture</span></h2>
@@ -149,10 +149,10 @@ flowchart TD
     API --> DB
 ```
 
-<hr style="background-color: #17d1a646">
 
 
-<h2  align="center" style="color: #17D1A6">Segurança <span style="color: #000000b2">/ rastreabilidade</span></h2>
+
+<h2 style="color: #17D1A6">Segurança <span style="color: #000000b2">/ rastreabilidade</span></h2>
 
 No FieldOps, segurança e rastreabilidade fazem parte do processo de inspeção desde a execução em campo até a revisão dos resultados.
 Cada operação deve estar associada ao usuário responsável, às permissões correspondentes, às evidências registradas e ao histórico da atividade, garantindo maior controle sobre os dados e sobre o ciclo de vida de uma inspeção.
@@ -172,7 +172,7 @@ Cada operação deve estar associada ao usuário responsável, às permissões c
 | **Auditoria** | Permitir o rastreamento das operações realizadas |
 | **Sincronização** | Registrar e controlar a transferência dos dados entre dispositivo e servidor |
 
-<hr style="background-color: #17d1a646">
+
 
 
 <h2 align="center"  style="color: #000000b2">Escopo do<span style="color: #17D1A6"> MVP</span></h2>
@@ -222,7 +222,7 @@ SUPERVISOR
 TÉCNICO
 █░ 0%
 
-<hr style="background-color: #17d1a646">
+
 
 
 <h2 align="center" style="color: #17D1A6">Road<span style="color: #000000b2">map</span></h2>
@@ -248,7 +248,7 @@ flowchart LR
     style E fill:#17D1A6,stroke:#000000b2,stroke-width:2px
 ```
 
-<hr style="background-color: #17d1a646">
+
 
 
 ## 📄 Documentação
@@ -259,7 +259,7 @@ A documentação técnica do projeto está disponível no diretório:
 
 Documentações específicas sobre arquitetura, API, banco de dados, sincronização e regras de negócio serão adicionadas conforme a evolução do projeto.
 
-<hr style="background-color: #17d1a646">
+
 
 <h2 style="color: #17D1A6">Equipe</h2>
  
@@ -270,9 +270,8 @@ Documentações específicas sobre arquitetura, API, banco de dados, sincroniza�
 <p align="center" style="color: #17D1A6">Carlos<span style="color: #000000b2"> Eduardo</span></p>
 <p align="right" style="color: #17D1A6">Gustavo<span style="color: #000000b2"> Silveira</span></p>
 
-<hr style="background-color: #17d1a646">
+
 <footer align="center">
   <strong style="color: #17D1A6">Field<span style="color: #000000b2">Ops</span></strong><br>
   <sub>Inspeções em campo. Dados que geram confiança.</sub>
 </footer>
-<hr style="background-color: #17d1a646">
