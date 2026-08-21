@@ -270,6 +270,7 @@ Documentações específicas sobre arquitetura, API, banco de dados, sincroniza�
 <p align="center" style="color: #17D1A6">Carlos<span style="color: #000000b2"> Eduardo</span></p>
 <p align="right" style="color: #17D1A6">Gustavo<span style="color: #000000b2"> Silveira</span></p>
 
+---
 
 <p align="center">
   <strong style="color: #17D1A6">Field<span style="color: #000000b2">Ops</span></strong><br>
