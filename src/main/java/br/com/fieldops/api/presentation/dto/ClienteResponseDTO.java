@@ -13,6 +13,8 @@ public class ClienteResponseDTO {
     private Long id;
     private String nome;
     private String cnpj;
+    private String telefone;
+    private String email;
     private Boolean ativo;
 
     // Construtor auxiliar para converter a Entidade direto para o DTO
@@ -20,6 +22,8 @@ public class ClienteResponseDTO {
         this.id = cliente.getId();
         this.nome = cliente.getNome();
         this.cnpj = cliente.getCnpj();
+        this.telefone = cliente.getTelefone();
+        this.email = cliente.getEmail();
         this.ativo = cliente.getAtivo();
     }
 }

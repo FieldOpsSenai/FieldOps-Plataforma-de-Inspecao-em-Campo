@@ -35,9 +35,16 @@ public class ClienteController {
                     .body("Já existe um cliente cadastrado com este CNPJ");
         }
 
+        if (clienteRepository.existsByEmail(dto.getEmail())) {
+            return ResponseEntity.status(HttpStatus.BAD_REQUEST)
+                    .body("Já existe um cliente cadastrado com este e-mail");
+        }
+
         Cliente cliente = new Cliente();
         cliente.setNome(dto.getNome());
         cliente.setCnpj(dto.getCnpj());
+        cliente.setTelefone(dto.getTelefone());
+        cliente.setEmail(dto.getEmail());
         cliente.setAtivo(true);
 
         Cliente clienteSalvo = clienteRepository.save(cliente);
