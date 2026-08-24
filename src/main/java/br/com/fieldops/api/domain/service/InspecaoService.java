@@ -2,6 +2,7 @@ package br.com.fieldops.api.domain.service;
 
 import br.com.fieldops.api.domain.entity.Equipamento;
 import br.com.fieldops.api.domain.entity.Inspecao;
+import br.com.fieldops.api.domain.entity.Perfil;
 import br.com.fieldops.api.domain.entity.StatusInspecao;
 import br.com.fieldops.api.domain.entity.Usuario;
 import br.com.fieldops.api.domain.repository.EquipamentoRepository;
@@ -38,6 +39,11 @@ public class InspecaoService {
         Usuario usuario = usuarioRepository.findById(dto.getUsuarioId())
                 .orElseThrow(() -> new IllegalArgumentException("Usuário não encontrado com o ID: " + dto.getUsuarioId()));
 
+        // TRAVA DE SEGURANÇA: Garante que apenas usuários com perfil TECNICO recebam a inspeção
+        if (!Perfil.TECNICO.equals(usuario.getPerfil())) {
+            throw new IllegalArgumentException("A inspeção só pode ser atribuída a um usuário com perfil TÉCNICO.");
+        }
+
         Inspecao inspecao = new Inspecao();
         inspecao.setDescricao(dto.getDescricao());
         inspecao.setDataAgendada(dto.getDataAgendada());
@@ -72,7 +78,6 @@ public class InspecaoService {
             inspecao.setObservacoes(dto.getObservacoes());
         }
 
-        // Fuso oficial de Brasília formatado corretamente com barra ("America/Sao_Paulo")
         if (StatusInspecao.CONCLUIDA.equals(dto.getStatus())) {
             inspecao.setDataRealizacao(LocalDateTime.now(ZoneId.of("America/Sao_Paulo")));
         }
